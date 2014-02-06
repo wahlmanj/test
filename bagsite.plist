@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com...yList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>javascript-url</key>
+<string>http://192.168.2.10/plexconnect/assets/js/application.js</string>
+<key>javascript-url-signature</key>
+<data>kXmT89FEvwQ0DyVGkyJe/UuVdamvqyWb++Vk+yaJqGUCqibB7MUom2BvJXrdGhiFVZr7Rp+XaHxxJ1l+lk5MNKSAuWRaDvQ6H6STUcP+kAYOQ1ueBX7ih5hoDWJcMWfIMQ6a46e93GBg1ehczrFhFiwFuQ8/YVVo24a0vmVbKz/NH0tqKxq2+3fIZzUbOhUdYq+fa4rIPuIvNASTrhOxByG8xQW/mPQREKaeoASS35OfNIMGopkesqIz9lQbpsg+Ow6GfXjvsXonIuXeSQcpkBtxZUFNILcW6vFyEFcyzyDbFWi/aQkyOkw4gYmS7+CzDObV+vHImBe3DQPt4ES7lQ==</data>
+<key>auth-type</key>
+<string>js</string>
+<key>enabled</key>
+<string>YES</string>
+<key>menu-title</key>
+<string>Plex Connect</string>
+<key>merchant</key>
+<string>Plex Connect</string>
+<key>menu-icon-url</key>
+<dict>
+<key>720</key>
+<string>http://192.168.2.10/plexconnect/assets/plex.png</string>
+<key>1080</key>
+<string>http://192.168.2.10/plexconnect/assets/plex.png</string>
+</dict>
+</dict>
+</plist>
