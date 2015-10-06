@@ -1,0 +1,812 @@
+02:57:05 PlexConnect: started: 02:57:05
+02:57:05 PlexConnect: Version: 0.5-dev-020615
+02:57:05 PlexConnect: Python: 2.7.10 (default, Aug 22 2015, 20:33:39) 
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.1)]
+02:57:05 PlexConnect: Host OS: darwin
+02:57:05 PlexConnect: PILBackgrounds: Is PIL installed? True
+02:57:05 Settings: getsetting enable_plexconnect_autodetect=True
+02:57:05 PlexConnect: IP_self: 192.168.2.3
+02:57:05 Settings: getsetting hosttointercept=trailers.apple.com
+02:57:05 ATVSettings: init class CATVSettings
+02:57:05 ATVSettings: load settings
+02:57:05 Settings: getsetting enable_dnsserver=True
+02:57:05 DNSServer: started: 02:57:05
+02:57:05 Settings: getsetting port_dnsserver=53
+02:57:05 Settings: getsetting ip_dnsmaster=8.8.8.8
+02:57:05 Settings: getsetting prevent_atv_update=True
+02:57:05 DNSServer: ***
+02:57:05 DNSServer: DNSServer: Serving DNS on 192.168.2.3 port 53.
+02:57:05 DNSServer: intercept: ['trailers.apple.com'] => 192.168.2.3
+02:57:05 DNSServer: restrain: ['mesu.apple.com', 'appldnld.apple.com', 'appldnld.apple.com.edgesuite.net'] => 127.0.0.1
+02:57:05 DNSServer: forward other to higher level DNS: 8.8.8.8
+02:57:05 DNSServer: ***
+02:57:06 WebServer: started: 02:57:06
+02:57:06 Settings: getsetting port_webserver=80
+02:57:06 WebServer: ***
+02:57:06 WebServer: WebServer: Serving HTTP on 192.168.2.3 port 80.
+02:57:06 WebServer: ***
+02:57:06 Settings: getsetting enable_webserver_ssl=True
+02:57:06 WebServer: started: 02:57:06
+02:57:06 Settings: getsetting port_ssl=443
+02:57:06 Settings: getsetting certfile=./assets/certificates/trailers.pem
+02:57:06 Settings: getsetting certfile=./assets/certificates/trailers.pem
+02:57:06 WebServer: ***
+02:57:06 WebServer: WebServer: Serving HTTPS on 192.168.2.3 port 443.
+02:57:06 WebServer: ***
+02:57:11 DNSServer: DNS request received!
+02:57:11 DNSServer: Source: ('192.168.2.2', 63396)
+02:57:11 DNSServer: Domain: trailers.apple.com
+02:57:11 DNSServer: ***intercept request
+02:57:11 DNSServer: -> DNS response: 192.168.2.3
+02:57:11 WebServer: http request header:
+Host: trailers.apple.com
+Accept-Encoding: gzip, deflate
+Accept: */*
+Accept-Language: en;q=0.9
+Cookie: s_vi=[CS]v1|2AD9138805013717-6000160320269B03[CE]; xp_ci=3z2mscHhzED6z50sz9rwzePh1F7KR
+Connection: keep-alive
+X-Apple-TV-Resolution: 720
+X-Apple-TV-Version: 6.5
+User-Agent: iTunes-AppleTV/6.5 (2; 8GB; dt:11)
+
+02:57:11 WebServer: http request path:
+/appletv/us/js/application.js
+02:57:11 Localize: aTVLanguage: en
+02:57:11 WebServer: pms address:
+
+02:57:11 WebServer: cleaned path:
+/appletv/us/js/application.js
+02:57:11 WebServer: PlexConnect options:
+{'aTVScreenResolution': '720', 'aTVFirmwareVersion': '6.5', 'aTVLanguage': 'en', 'aTVAddress': '192.168.2.2'}
+02:57:11 WebServer: additional arguments:
+
+02:57:11 WebServer: serving /js/application.js
+02:57:11 Settings: getsetting allow_gzip_atv=False
+02:57:11 WebServer: http request header:
+Host: trailers.apple.com
+X-Apple-Store-Front: 143441-1,19
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en;q=0.9
+Cookie: s_vi=[CS]v1|2AD9138805013717-6000160320269B03[CE]; xp_ci=3z2mscHhzED6z50sz9rwzePh1F7KR
+Connection: keep-alive
+X-Apple-TV-Resolution: 720
+X-Apple-TV-Version: 6.5
+User-Agent: iTunes-AppleTV/6.5 (2; 8GB; dt:11)
+
+02:57:11 WebServer: http request path:
+/&PlexConnect=Discover&PlexConnectUDID=C07GGV5LDDR5
+02:57:11 Localize: aTVLanguage: en
+02:57:11 WebServer: pms address:
+
+02:57:11 WebServer: cleaned path:
+/
+02:57:11 WebServer: PlexConnect options:
+{'aTVAddress': '192.168.2.2', 'aTVScreenResolution': '720', 'PlexConnectUDID': 'C07GGV5LDDR5', 'aTVLanguage': 'en', 'aTVFirmwareVersion': '6.5', 'PlexConnect': 'Discover'}
+02:57:11 WebServer: additional arguments:
+
+02:57:11 WebServer: serving .xml: /
+02:57:11 XMLConverter: ---------------------------------------------
+02:57:11 XMLConverter: PMS, path:  / 
+02:57:11 XMLConverter: Initial Command: Discover
+02:57:11 ATVSettings: getsetting 
+02:57:11 ATVSettings: getsetting False
+02:57:11 Settings: getsetting enable_plexgdm=True
+02:57:11 PlexAPI: ***
+02:57:11 PlexAPI: looking up Plex Media Server
+02:57:11 PlexAPI: ***
+02:57:11 PlexAPI: Sending discovery message: M-SEARCH * HTTP/1.0
+02:57:11 PlexAPI: Received data from ('192.168.2.3', 32414)
+02:57:11 PlexAPI: Data received:
+ HTTP/1.0 200 OK
+Content-Type: plex/media-server
+Host: 7438821207674dc78e9f037fbf172d36.plex.direct
+Name: MPB
+Port: 32400
+Resource-Identifier: 146a0f9f0163064289f42b990dd3544ff9846f4c
+Updated-At: 1444117877
+Version: 0.9.12.11.1406-8403350
+
+
+02:57:12 PlexAPI: GDM: Servers discovered: 1
+02:57:12 PlexAPI: MPB 192.168.2.3:32400
+02:57:12 PlexAPI: Servers (local, plex.tv, MyPlex): 2
+02:57:12 PlexAPI: {'name': u'MPB', 'accesstoken': '', 'address': '192.168.2.3:32400', 'enableGzip': False, 'ip': '192.168.2.3', 'scheme': 'http', 'local': '1', 'port': '32400', 'owned': '1', 'baseURL': 'http://192.168.2.3:32400'}
+02:57:12 PlexAPI: {'name': 'plex.tv', 'accesstoken': '', 'address': 'plex.tv:443', 'enableGzip': False, 'ip': 'plex.tv', 'scheme': 'https', 'local': '-', 'port': '443', 'owned': '-', 'baseURL': 'https://plex.tv:443'}
+02:57:12 Settings: getsetting allow_gzip_atv=False
+02:57:12 WebServer: http request header:
+Host: trailers.apple.com
+X-Apple-Store-Front: 143441-1,19
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en;q=0.9
+Cookie: s_vi=[CS]v1|2AD9138805013717-6000160320269B03[CE]; xp_ci=3z2mscHhzED6z50sz9rwzePh1F7KR
+Connection: keep-alive
+X-Apple-TV-Resolution: 720
+X-Apple-TV-Version: 6.5
+User-Agent: iTunes-AppleTV/6.5 (2; 8GB; dt:11)
+
+02:57:12 WebServer: http request path:
+/&PlexConnectATVLogLevel=1&PlexConnectLog=atv.onGenerateRequest%20done%3A%20http%3A%2F%2Ftrailers.apple.com%2FPlexConnect.xml%3FPlexConnectUDID%3DC07GGV5LDDR5%26PlexConnectATVName%3DGreat%2520Room%2520Apple%2520TV
+02:57:12 Localize: aTVLanguage: en
+02:57:12 WebServer: pms address:
+
+02:57:12 WebServer: cleaned path:
+/
+02:57:12 WebServer: PlexConnect options:
+{'aTVAddress': '192.168.2.2', 'aTVScreenResolution': '720', 'PlexConnectATVLogLevel': '1', 'PlexConnectLog': 'atv.onGenerateRequest done: http://trailers.apple.com/PlexConnect.xml?PlexConnectUDID=C07GGV5LDDR5&PlexConnectATVName=Great%20Room%20Apple%20TV', 'aTVFirmwareVersion': '6.5', 'aTVLanguage': 'en'}
+02:57:12 WebServer: additional arguments:
+
+02:57:12 ATVLogger: atv.onGenerateRequest done: http://trailers.apple.com/PlexConnect.xml?PlexConnectUDID=C07GGV5LDDR5&PlexConnectATVName=Great%20Room%20Apple%20TV
+02:57:12 WebServer: http request header:
+Host: trailers.apple.com
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en
+Cookie: s_vi=[CS]v1|2AD9138805013717-6000160320269B03[CE]; xp_ci=3z2mscHhzED6z50sz9rwzePh1F7KR; 
+Connection: keep-alive
+X-Apple-TV-Resolution: 720
+X-Apple-TV-Version: 6.5
+User-Agent: iTunes-AppleTV/6.5 (2; 8GB; dt:11)
+
+02:57:12 WebServer: http request path:
+/PlexConnect.xml?PlexConnectUDID=C07GGV5LDDR5&PlexConnectATVName=Great%20Room%20Apple%20TV
+02:57:12 Localize: aTVLanguage: en
+02:57:12 WebServer: pms address:
+
+02:57:12 WebServer: cleaned path:
+/PlexConnect.xml
+02:57:12 WebServer: PlexConnect options:
+{'aTVAddress': '192.168.2.2', 'aTVScreenResolution': '720', 'PlexConnectUDID': 'C07GGV5LDDR5', 'aTVLanguage': 'en', 'aTVFirmwareVersion': '6.5', 'PlexConnectATVName': 'Great Room Apple TV'}
+02:57:12 WebServer: additional arguments:
+
+02:57:12 WebServer: serving .xml: /PlexConnect.xml
+02:57:12 XMLConverter: ---------------------------------------------
+02:57:12 XMLConverter: PMS, path:  /PlexConnect.xml 
+02:57:12 XMLConverter: Initial Command: 
+02:57:12 XMLConverter: Split Directory:  Command: 
+02:57:12 XMLConverter: XMLTemplate: PlexConnect.xml
+02:57:12 XMLConverter: ---------------------------------------------
+02:57:12 XMLConverter: XML_ExpandNode: None - done
+02:57:12 XMLConverter: XML_ExpandNode: None - done
+02:57:12 XMLConverter: XML_ExpandNode: 
+      {{VAR(ix::{{VAL($libraryview::=1|Hide={{VAL($sharedlibrariesview::=1|Hide=0|Hide =1)}}|Hide =1)}})}}  
+      
+02:57:12 XMLConverter: XML_ExpandLine: ix::{{VAL($libraryview::=1|Hide={{VAL($sharedlibrariesview::=1|Hide=0|Hide =1)}}|Hide =1)}}
+02:57:12 XMLConverter: XML_ExpandLine: $libraryview::=1|Hide={{VAL($sharedlibrariesview::=1|Hide=0|Hide =1)}}|Hide =1
+02:57:12 XMLConverter: CCmds_getParam: $sharedlibrariesview, :=1|Hide=0|Hide =1
+02:57:12 XMLConverter: CCmds_getParam: , =1|Hide=0|Hide =1
+02:57:12 ATVSettings: getsetting List
+02:57:12 XMLConverter: CCmds_getKey: List,=1|Hide=0|Hide =1,False
+02:57:12 XMLConverter: CCmds_getParam: =1|Hide=0|Hide =1, 
+02:57:12 XMLConverter: CCmds_getConversion: [('', '1'), ('Hide', '0'), ('Hide ', '1')],
+02:57:12 XMLConverter: CCmds_applyConversion: 1
+02:57:12 XMLConverter: XML_ExpandLine: $libraryview::=1|Hide=1|Hide =1 - done
+02:57:12 XMLConverter: CCmds_getParam: $libraryview, :=1|Hide=1|Hide =1
+02:57:12 XMLConverter: CCmds_getParam: , =1|Hide=1|Hide =1
+02:57:12 ATVSettings: getsetting List
+02:57:12 XMLConverter: CCmds_getKey: List,=1|Hide=1|Hide =1,False
+02:57:12 XMLConverter: CCmds_getParam: =1|Hide=1|Hide =1, 
+02:57:12 XMLConverter: CCmds_getConversion: [('', '1'), ('Hide', '1'), ('Hide ', '1')],
+02:57:12 XMLConverter: CCmds_applyConversion: 1
+02:57:12 XMLConverter: XML_ExpandLine: ix::1 - done
+02:57:12 XMLConverter: CCmds_getParam: ix, :1
+02:57:12 XMLConverter: CCmds_getParam: , 1
+02:57:12 XMLConverter: CCmds_getParam: 1, 
+02:57:12 XMLConverter: CCmds_getKey: 1,,True
+02:57:12 XMLConverter: CCmds_getParam: , 
+02:57:12 XMLConverter: CCmds_getConversion: [],
+02:57:12 XMLConverter: XML_ExpandNode: {{TEXT(Playlists)}}
+02:57:12 XMLConverter: XML_ExpandNode - Stumbled over TEXT in line {{TEXT(Playlists)}}
+02:57:12 XMLConverter: XML_ExpandNode: {{URL(:/PMS(all)/playlists::PlexConnect=Playlists_View)}}
+02:57:12 XMLConverter: XML_ExpandNode - Stumbled over URL in line {{URL(:/PMS(all)/playlists::PlexConnect=Playlists_View)}}
+02:57:12 XMLConverter: XML_ExpandNode: {{CUT($playlistsview:CUT:=|Hide=CUT|Hide =)}}
+        
+02:57:12 XMLConverter: CCmds_getParam: $playlistsview, CUT:=|Hide=CUT|Hide =
+02:57:12 XMLConverter: CCmds_getParam: CUT, =|Hide=CUT|Hide =
+02:57:12 ATVSettings: getsetting List
+02:57:12 XMLConverter: CCmds_getKey: List,=|Hide=CUT|Hide =,False
+02:57:12 XMLConverter: CCmds_getParam: =|Hide=CUT|Hide =, 
+02:57:12 XMLConverter: CCmds_getConversion: [('', ''), ('Hide', 'CUT'), ('Hide ', '')],
+02:57:12 XMLConverter: CCmds_applyConversion: 
+02:57:12 XMLConverter: XML_ExpandNode: {{TEXT(Library)}}
+02:57:12 XMLConverter: XML_ExpandNode - Stumbled over TEXT in line {{TEXT(Library)}}
+02:57:12 XMLConverter: XML_ExpandNode: {{URL(:/PMS(owned)/library/sections::PlexConnect=Library_View)}}
+02:57:12 XMLConverter: XML_ExpandNode - Stumbled over URL in line {{URL(:/PMS(owned)/library/sections::PlexConnect=Library_View)}}
+02:57:12 XMLConverter: XML_ExpandNode: {{CUT($libraryview:CUT:=|Hide=CUT|Hide =)}}
+        
+02:57:12 XMLConverter: CCmds_getParam: $libraryview, CUT:=|Hide=CUT|Hide =
+02:57:12 XMLConverter: CCmds_getParam: CUT, =|Hide=CUT|Hide =
+02:57:12 ATVSettings: getsetting List
+02:57:12 XMLConverter: CCmds_getKey: List,=|Hide=CUT|Hide =,False
+02:57:12 XMLConverter: CCmds_getParam: =|Hide=CUT|Hide =, 
+02:57:12 XMLConverter: CCmds_getConversion: [('', ''), ('Hide', 'CUT'), ('Hide ', '')],
+02:57:12 XMLConverter: CCmds_applyConversion: 
+02:57:12 XMLConverter: XML_ExpandNode: {{TEXT(Shared Libraries)}}
+02:57:12 XMLConverter: XML_ExpandNode - Stumbled over TEXT in line {{TEXT(Shared Libraries)}}
+02:57:12 XMLConverter: XML_ExpandNode: {{URL(:/PMS(shared)/library/sections::PlexConnect=Library_ViewShared)}}
+02:57:12 XMLConverter: XML_ExpandNode - Stumbled over URL in line {{URL(:/PMS(shared)/library/sections::PlexConnect=Library_ViewShared)}}
+02:57:12 XMLConverter: XML_ExpandNode: {{CUT($myplex_auth:CUT:=CUT| =)}}{{CUT($sharedlibrariesview:CUT:=|Hide=CUT|Hide =)}}
+        
+02:57:12 XMLConverter: CCmds_getParam: $myplex_auth, CUT:=CUT| =
+02:57:12 XMLConverter: CCmds_getParam: CUT, =CUT| =
+02:57:12 ATVSettings: getsetting 
+02:57:12 XMLConverter: CCmds_getKey: ,=CUT| =,False
+02:57:12 XMLConverter: CCmds_getParam: =CUT| =, 
+02:57:12 XMLConverter: CCmds_getConversion: [('', 'CUT'), (' ', '')],
+02:57:12 XMLConverter: CCmds_applyConversion: CUT
+02:57:12 XMLConverter: XML_ExpandNode: {{TEXT(Playlists)}}
+02:57:12 XMLConverter: XML_ExpandNode - Stumbled over TEXT in line {{TEXT(Playlists)}}
+02:57:12 XMLConverter: XML_ExpandNode: {{URL(:/PMS(all)/playlists::PlexConnect=Playlists_View)}}
+02:57:12 XMLConverter: XML_ExpandNode - Stumbled over URL in line {{URL(:/PMS(all)/playlists::PlexConnect=Playlists_View)}}
+02:57:12 XMLConverter: XML_ExpandNode: {{TEXT(Library)}}
+02:57:12 XMLConverter: XML_ExpandNode - Stumbled over TEXT in line {{TEXT(Library)}}
+02:57:12 XMLConverter: XML_ExpandNode: {{URL(:/PMS(owned)/library/sections::PlexConnect=Library_View)}}
+02:57:12 XMLConverter: XML_ExpandNode - Stumbled over URL in line {{URL(:/PMS(owned)/library/sections::PlexConnect=Library_View)}}
+02:57:12 XMLConverter: XML_ExpandNode: {{TEXT(Channels)}}
+02:57:12 XMLConverter: XML_ExpandNode - Stumbled over TEXT in line {{TEXT(Channels)}}
+02:57:12 XMLConverter: XML_ExpandNode: {{URL(:/PMS(owned)/channels/all::PlexConnect=Channels_View)}}
+02:57:12 XMLConverter: XML_ExpandNode - Stumbled over URL in line {{URL(:/PMS(owned)/channels/all::PlexConnect=Channels_View)}}
+02:57:12 XMLConverter: XML_ExpandNode: {{CUT($channelview:CUT:=|Hide=CUT|Hide =)}}
+        
+02:57:12 XMLConverter: CCmds_getParam: $channelview, CUT:=|Hide=CUT|Hide =
+02:57:12 XMLConverter: CCmds_getParam: CUT, =|Hide=CUT|Hide =
+02:57:12 ATVSettings: getsetting List
+02:57:12 XMLConverter: CCmds_getKey: List,=|Hide=CUT|Hide =,False
+02:57:12 XMLConverter: CCmds_getParam: =|Hide=CUT|Hide =, 
+02:57:12 XMLConverter: CCmds_getConversion: [('', ''), ('Hide', 'CUT'), ('Hide ', '')],
+02:57:12 XMLConverter: CCmds_applyConversion: 
+02:57:12 XMLConverter: XML_ExpandNode: {{TEXT(Search)}}
+02:57:12 XMLConverter: XML_ExpandNode - Stumbled over TEXT in line {{TEXT(Search)}}
+02:57:12 XMLConverter: XML_ExpandNode: {{URL(:/PMS(all)::PlexConnect=Search_EntryAllPMS)}}
+02:57:12 XMLConverter: XML_ExpandNode - Stumbled over URL in line {{URL(:/PMS(all)::PlexConnect=Search_EntryAllPMS)}}
+02:57:12 XMLConverter: XML_ExpandNode: {{CUT($globalsearch:CUT:=|Hide=CUT|Show=)}}
+        
+02:57:12 XMLConverter: CCmds_getParam: $globalsearch, CUT:=|Hide=CUT|Show=
+02:57:12 XMLConverter: CCmds_getParam: CUT, =|Hide=CUT|Show=
+02:57:12 ATVSettings: getsetting Show
+02:57:12 XMLConverter: CCmds_getKey: Show,=|Hide=CUT|Show=,False
+02:57:12 XMLConverter: CCmds_getParam: =|Hide=CUT|Show=, 
+02:57:12 XMLConverter: CCmds_getConversion: [('', ''), ('Hide', 'CUT'), ('Show', '')],
+02:57:12 XMLConverter: CCmds_applyConversion: 
+02:57:12 XMLConverter: XML_ExpandNode: {{TEXT(Settings)}}
+02:57:12 XMLConverter: XML_ExpandNode - Stumbled over TEXT in line {{TEXT(Settings)}}
+02:57:12 XMLConverter: XML_ExpandNode: {{URL(:/::PlexConnect=Settings_Main)}}
+02:57:12 XMLConverter: XML_ExpandNode - Stumbled over URL in line {{URL(:/::PlexConnect=Settings_Main)}}
+02:57:12 XMLConverter: XML_ExpandLine: {{URL(:/js/utils.js)}}
+02:57:12 XMLConverter: CCmds_getParam: , /js/utils.js
+02:57:12 XMLConverter: CCmds_getParam: /js/utils.js, 
+02:57:12 XMLConverter: CCmds_getKey: /js/utils.js,,True
+02:57:12 XMLConverter: CCmds_getParam: , 
+02:57:12 XMLConverter: CCmds_getParam: , 
+02:57:12 XMLConverter: XML_ExpandLine: http://trailers.apple.com/js/utils.js - done
+02:57:12 XMLConverter: XML_ExpandLine: {{URL(:/js/handlePlexConnectNavbar.js)}}
+02:57:12 XMLConverter: CCmds_getParam: , /js/handlePlexConnectNavbar.js
+02:57:12 XMLConverter: CCmds_getParam: /js/handlePlexConnectNavbar.js, 
+02:57:12 XMLConverter: CCmds_getKey: /js/handlePlexConnectNavbar.js,,True
+02:57:12 XMLConverter: CCmds_getParam: , 
+02:57:12 XMLConverter: CCmds_getParam: , 
+02:57:12 XMLConverter: XML_ExpandLine: http://trailers.apple.com/js/handlePlexConnectNavbar.js - done
+02:57:12 XMLConverter: XML_ExpandLine: {{VAL($playlistsview::={{VAL(#ix)}}|Hide=0|Hide ={{VAL(#ix)}})}}
+02:57:12 XMLConverter: XML_ExpandLine: $playlistsview::={{VAL(#ix)}}|Hide=0|Hide ={{VAL(#ix)}}
+02:57:12 XMLConverter: CCmds_getParam: #ix, 
+02:57:12 XMLConverter: CCmds_getParam: , 
+02:57:12 XMLConverter: CCmds_getKey: 1,,False
+02:57:12 XMLConverter: CCmds_getParam: , 
+02:57:12 XMLConverter: CCmds_getConversion: [],
+02:57:12 XMLConverter: CCmds_applyConversion: 1
+02:57:12 XMLConverter: XML_ExpandLine: $playlistsview::=1|Hide=0|Hide ={{VAL(#ix)}} - done
+02:57:12 XMLConverter: XML_ExpandLine: $playlistsview::=1|Hide=0|Hide ={{VAL(#ix)}}
+02:57:12 XMLConverter: CCmds_getParam: #ix, 
+02:57:12 XMLConverter: CCmds_getParam: , 
+02:57:12 XMLConverter: CCmds_getKey: 1,,False
+02:57:12 XMLConverter: CCmds_getParam: , 
+02:57:12 XMLConverter: CCmds_getConversion: [],
+02:57:12 XMLConverter: CCmds_applyConversion: 1
+02:57:12 XMLConverter: XML_ExpandLine: $playlistsview::=1|Hide=0|Hide =1 - done
+02:57:12 XMLConverter: CCmds_getParam: $playlistsview, :=1|Hide=0|Hide =1
+02:57:12 XMLConverter: CCmds_getParam: , =1|Hide=0|Hide =1
+02:57:12 ATVSettings: getsetting List
+02:57:12 XMLConverter: CCmds_getKey: List,=1|Hide=0|Hide =1,False
+02:57:12 XMLConverter: CCmds_getParam: =1|Hide=0|Hide =1, 
+02:57:12 XMLConverter: CCmds_getConversion: [('', '1'), ('Hide', '0'), ('Hide ', '1')],
+02:57:12 XMLConverter: CCmds_applyConversion: 1
+02:57:12 XMLConverter: XML_ExpandLine: 1 - done
+02:57:12 XMLConverter: XML_ExpandLine: {{TEXT(Playlists)}}
+02:57:12 XMLConverter: XML_ExpandLine: Playlists - done
+02:57:12 XMLConverter: XML_ExpandLine: {{URL(:/PMS(all)/playlists::PlexConnect=Playlists_View)}}
+02:57:12 XMLConverter: CCmds_getParam: , /PMS(all)/playlists::PlexConnect=Playlists_View
+02:57:12 XMLConverter: CCmds_getParam: /PMS(all)/playlists, :PlexConnect=Playlists_View
+02:57:12 XMLConverter: CCmds_getKey: /PMS(all)/playlists,:PlexConnect=Playlists_View,True
+02:57:12 XMLConverter: CCmds_getParam: , PlexConnect=Playlists_View
+02:57:12 XMLConverter: CCmds_getParam: PlexConnect=Playlists_View, 
+02:57:12 XMLConverter: XML_ExpandLine: http://trailers.apple.com/PMS(all)/playlists?PlexConnect=Playlists_View - done
+02:57:12 XMLConverter: XML_ExpandLine: {{TEXT(Library)}}
+02:57:12 XMLConverter: XML_ExpandLine: Library - done
+02:57:12 XMLConverter: XML_ExpandLine: {{URL(:/PMS(owned)/library/sections::PlexConnect=Library_View)}}
+02:57:12 XMLConverter: CCmds_getParam: , /PMS(owned)/library/sections::PlexConnect=Library_View
+02:57:12 XMLConverter: CCmds_getParam: /PMS(owned)/library/sections, :PlexConnect=Library_View
+02:57:12 XMLConverter: CCmds_getKey: /PMS(owned)/library/sections,:PlexConnect=Library_View,True
+02:57:12 XMLConverter: CCmds_getParam: , PlexConnect=Library_View
+02:57:12 XMLConverter: CCmds_getParam: PlexConnect=Library_View, 
+02:57:12 XMLConverter: XML_ExpandLine: http://trailers.apple.com/PMS(owned)/library/sections?PlexConnect=Library_View - done
+02:57:12 XMLConverter: XML_ExpandLine: {{TEXT(Channels)}}
+02:57:12 XMLConverter: XML_ExpandLine: Channels - done
+02:57:12 XMLConverter: XML_ExpandLine: {{URL(:/PMS(owned)/channels/all::PlexConnect=Channels_View)}}
+02:57:12 XMLConverter: CCmds_getParam: , /PMS(owned)/channels/all::PlexConnect=Channels_View
+02:57:12 XMLConverter: CCmds_getParam: /PMS(owned)/channels/all, :PlexConnect=Channels_View
+02:57:12 XMLConverter: CCmds_getKey: /PMS(owned)/channels/all,:PlexConnect=Channels_View,True
+02:57:12 XMLConverter: CCmds_getParam: , PlexConnect=Channels_View
+02:57:12 XMLConverter: CCmds_getParam: PlexConnect=Channels_View, 
+02:57:12 XMLConverter: XML_ExpandLine: http://trailers.apple.com/PMS(owned)/channels/all?PlexConnect=Channels_View - done
+02:57:12 XMLConverter: XML_ExpandLine: {{TEXT(Search)}}
+02:57:12 XMLConverter: XML_ExpandLine: Search - done
+02:57:12 XMLConverter: XML_ExpandLine: {{URL(:/PMS(all)::PlexConnect=Search_EntryAllPMS)}}
+02:57:12 XMLConverter: CCmds_getParam: , /PMS(all)::PlexConnect=Search_EntryAllPMS
+02:57:12 XMLConverter: CCmds_getParam: /PMS(all), :PlexConnect=Search_EntryAllPMS
+02:57:12 XMLConverter: CCmds_getKey: /PMS(all),:PlexConnect=Search_EntryAllPMS,True
+02:57:12 XMLConverter: CCmds_getParam: , PlexConnect=Search_EntryAllPMS
+02:57:12 XMLConverter: CCmds_getParam: PlexConnect=Search_EntryAllPMS, 
+02:57:12 XMLConverter: XML_ExpandLine: http://trailers.apple.com/PMS(all)?PlexConnect=Search_EntryAllPMS - done
+02:57:12 XMLConverter: XML_ExpandLine: {{TEXT(Settings)}}
+02:57:12 XMLConverter: XML_ExpandLine: Settings - done
+02:57:12 XMLConverter: XML_ExpandLine: {{URL(:/::PlexConnect=Settings_Main)}}
+02:57:12 XMLConverter: CCmds_getParam: , /::PlexConnect=Settings_Main
+02:57:12 XMLConverter: CCmds_getParam: /, :PlexConnect=Settings_Main
+02:57:12 XMLConverter: CCmds_getKey: /,:PlexConnect=Settings_Main,True
+02:57:12 XMLConverter: CCmds_getParam: , PlexConnect=Settings_Main
+02:57:12 XMLConverter: CCmds_getParam: PlexConnect=Settings_Main, 
+02:57:12 XMLConverter: XML_ExpandLine: http://trailers.apple.com/PMS(192.168.2.3:32400)/?PlexConnect=Settings_Main - done
+02:57:12 XMLConverter: ====== generated aTV-XML ======
+02:57:12 XMLConverter: <atv>
+  <head>
+    <script src="http://trailers.apple.com/js/utils.js" />
+    <script src="http://trailers.apple.com/js/handlePlexConnectNavbar.js" />
+  </head>
+  <body>
+    <viewWithNavigationBar id="PlexConnect_Navigation" onNavigate="loadMenuPage(event)" onVolatileReload="reloadNavbar(event);" volatile="true">
+      <navigation currentIndex="1">
+        <navigationItem id="Playlists">
+          <title>Playlists</title>
+          <url>http://trailers.apple.com/PMS(all)/playlists?PlexConnect=Playlists_View</url>
+        </navigationItem>
+        <navigationItem id="Library">
+          <title>Library</title>
+          <url>http://trailers.apple.com/PMS(owned)/library/sections?PlexConnect=Library_View</url>
+        </navigationItem>
+        <navigationItem id="Channels">
+          <title>Channels</title>
+          <url>http://trailers.apple.com/PMS(owned)/channels/all?PlexConnect=Channels_View</url>
+        </navigationItem>
+        <navigationItem id="Search">
+          <title>Search</title>
+          <url>http://trailers.apple.com/PMS(all)?PlexConnect=Search_EntryAllPMS</url>
+        </navigationItem>
+        <navigationItem id="Settings">
+          <title>Settings</title>
+          <url>http://trailers.apple.com/PMS(192.168.2.3:32400)/?PlexConnect=Settings_Main</url>
+        </navigationItem>
+      </navigation>
+    </viewWithNavigationBar>
+  </body>
+</atv>
+
+02:57:12 XMLConverter: ====== aTV-XML finished ======
+02:57:12 Settings: getsetting allow_gzip_atv=False
+02:57:13 WebServer: http request header:
+Host: trailers.apple.com
+X-Apple-Store-Front: 143441-1,19
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en;q=0.9
+Cookie: s_vi=[CS]v1|2AD9138805013717-6000160320269B03[CE]; xp_ci=3z2mscHhzED6z50sz9rwzePh1F7KR
+Connection: keep-alive
+X-Apple-TV-Resolution: 720
+X-Apple-TV-Version: 6.5
+User-Agent: iTunes-AppleTV/6.5 (2; 8GB; dt:11)
+
+02:57:13 WebServer: http request path:
+/&PlexConnectATVLogLevel=1&PlexConnectLog=atv.onGenerateRequest%20done%3A%20http%3A%2F%2Ftrailers.apple.com%2Fjs%2Futils.js%3FPlexConnectUDID%3DC07GGV5LDDR5%26PlexConnectATVName%3DGreat%2520Room%2520Apple%2520TV
+02:57:13 WebServer: http request header:
+Host: trailers.apple.com
+Accept-Encoding: gzip, deflate
+Accept: */*
+Accept-Language: en;q=0.9
+Cookie: s_vi=[CS]v1|2AD9138805013717-6000160320269B03[CE]; xp_ci=3z2mscHhzED6z50sz9rwzePh1F7KR
+Connection: keep-alive
+X-Apple-TV-Resolution: 720
+X-Apple-TV-Version: 6.5
+User-Agent: iTunes-AppleTV/6.5 (2; 8GB; dt:11)
+
+02:57:13 Localize: aTVLanguage: en
+02:57:13 WebServer: http request path:
+/js/utils.js?PlexConnectUDID=C07GGV5LDDR5&PlexConnectATVName=Great%20Room%20Apple%20TV
+02:57:13 WebServer: pms address:
+
+02:57:13 WebServer: cleaned path:
+/
+02:57:13 Localize: aTVLanguage: en
+02:57:13 WebServer: PlexConnect options:
+{'aTVAddress': '192.168.2.2', 'aTVScreenResolution': '720', 'PlexConnectATVLogLevel': '1', 'PlexConnectLog': 'atv.onGenerateRequest done: http://trailers.apple.com/js/utils.js?PlexConnectUDID=C07GGV5LDDR5&PlexConnectATVName=Great%20Room%20Apple%20TV', 'aTVFirmwareVersion': '6.5', 'aTVLanguage': 'en'}
+02:57:13 WebServer: pms address:
+
+02:57:13 WebServer: additional arguments:
+
+02:57:13 WebServer: cleaned path:
+/js/utils.js
+02:57:13 WebServer: PlexConnect options:
+{'aTVAddress': '192.168.2.2', 'aTVScreenResolution': '720', 'PlexConnectUDID': 'C07GGV5LDDR5', 'aTVLanguage': 'en', 'aTVFirmwareVersion': '6.5', 'PlexConnectATVName': 'Great Room Apple TV'}
+02:57:13 ATVLogger: atv.onGenerateRequest done: http://trailers.apple.com/js/utils.js?PlexConnectUDID=C07GGV5LDDR5&PlexConnectATVName=Great%20Room%20Apple%20TV
+02:57:13 WebServer: additional arguments:
+
+02:57:13 WebServer: serving /js/utils.js
+02:57:13 Settings: getsetting allow_gzip_atv=False
+02:57:13 WebServer: http request header:
+Host: trailers.apple.com
+X-Apple-Store-Front: 143441-1,19
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en;q=0.9
+Cookie: s_vi=[CS]v1|2AD9138805013717-6000160320269B03[CE]; xp_ci=3z2mscHhzED6z50sz9rwzePh1F7KR
+Connection: keep-alive
+X-Apple-TV-Resolution: 720
+X-Apple-TV-Version: 6.5
+User-Agent: iTunes-AppleTV/6.5 (2; 8GB; dt:11)
+
+02:57:13 WebServer: http request path:
+/&PlexConnectATVLogLevel=1&PlexConnectLog=atv.onGenerateRequest%20done%3A%20http%3A%2F%2Ftrailers.apple.com%2Fjs%2FhandlePlexConnectNavbar.js%3FPlexConnectUDID%3DC07GGV5LDDR5%26PlexConnectATVName%3DGreat%2520Room%2520Apple%2520TV
+02:57:13 Localize: aTVLanguage: en
+02:57:13 WebServer: pms address:
+
+02:57:13 WebServer: cleaned path:
+/
+02:57:13 WebServer: PlexConnect options:
+{'aTVAddress': '192.168.2.2', 'aTVScreenResolution': '720', 'PlexConnectATVLogLevel': '1', 'PlexConnectLog': 'atv.onGenerateRequest done: http://trailers.apple.com/js/handlePlexConnectNavbar.js?PlexConnectUDID=C07GGV5LDDR5&PlexConnectATVName=Great%20Room%20Apple%20TV', 'aTVFirmwareVersion': '6.5', 'aTVLanguage': 'en'}
+02:57:13 WebServer: additional arguments:
+
+02:57:13 ATVLogger: atv.onGenerateRequest done: http://trailers.apple.com/js/handlePlexConnectNavbar.js?PlexConnectUDID=C07GGV5LDDR5&PlexConnectATVName=Great%20Room%20Apple%20TV
+02:57:13 WebServer: http request header:
+Host: trailers.apple.com
+Accept-Encoding: gzip, deflate
+Accept: */*
+Accept-Language: en;q=0.9
+Cookie: s_vi=[CS]v1|2AD9138805013717-6000160320269B03[CE]; xp_ci=3z2mscHhzED6z50sz9rwzePh1F7KR
+Connection: keep-alive
+X-Apple-TV-Resolution: 720
+X-Apple-TV-Version: 6.5
+User-Agent: iTunes-AppleTV/6.5 (2; 8GB; dt:11)
+
+02:57:13 WebServer: http request path:
+/js/handlePlexConnectNavbar.js?PlexConnectUDID=C07GGV5LDDR5&PlexConnectATVName=Great%20Room%20Apple%20TV
+02:57:13 Localize: aTVLanguage: en
+02:57:13 WebServer: pms address:
+
+02:57:13 WebServer: cleaned path:
+/js/handlePlexConnectNavbar.js
+02:57:13 WebServer: PlexConnect options:
+{'aTVAddress': '192.168.2.2', 'aTVScreenResolution': '720', 'PlexConnectUDID': 'C07GGV5LDDR5', 'aTVLanguage': 'en', 'aTVFirmwareVersion': '6.5', 'PlexConnectATVName': 'Great Room Apple TV'}
+02:57:13 WebServer: additional arguments:
+
+02:57:13 WebServer: serving /js/handlePlexConnectNavbar.js
+02:57:13 Settings: getsetting allow_gzip_atv=False
+02:57:13 WebServer: http request header:
+Host: trailers.apple.com
+X-Apple-Store-Front: 143441-1,19
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en;q=0.9
+Cookie: s_vi=[CS]v1|2AD9138805013717-6000160320269B03[CE]; xp_ci=3z2mscHhzED6z50sz9rwzePh1F7KR
+Connection: keep-alive
+X-Apple-TV-Resolution: 720
+X-Apple-TV-Version: 6.5
+User-Agent: iTunes-AppleTV/6.5 (2; 8GB; dt:11)
+
+02:57:13 WebServer: http request path:
+/&PlexConnectATVLogLevel=1&PlexConnectLog=loadMenuPage%3A%20itemid%3DLibrary
+02:57:13 Localize: aTVLanguage: en
+02:57:13 WebServer: pms address:
+
+02:57:13 WebServer: cleaned path:
+/
+02:57:13 WebServer: PlexConnect options:
+{'aTVAddress': '192.168.2.2', 'aTVScreenResolution': '720', 'PlexConnectATVLogLevel': '1', 'PlexConnectLog': 'loadMenuPage: itemid=Library', 'aTVFirmwareVersion': '6.5', 'aTVLanguage': 'en'}
+02:57:13 WebServer: additional arguments:
+
+02:57:13 ATVLogger: loadMenuPage: itemid=Library
+02:57:13 WebServer: http request header:
+Host: trailers.apple.com
+X-Apple-Store-Front: 143441-1,19
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en;q=0.9
+Cookie: s_vi=[CS]v1|2AD9138805013717-6000160320269B03[CE]; xp_ci=3z2mscHhzED6z50sz9rwzePh1F7KR
+Connection: keep-alive
+X-Apple-TV-Resolution: 720
+X-Apple-TV-Version: 6.5
+User-Agent: iTunes-AppleTV/6.5 (2; 8GB; dt:11)
+
+02:57:13 WebServer: http request path:
+/PMS(owned)/library/sections?PlexConnect=Library_View&PlexConnectUDID=C07GGV5LDDR5
+02:57:13 Localize: aTVLanguage: en
+02:57:13 WebServer: pms address:
+owned
+02:57:13 WebServer: cleaned path:
+/library/sections
+02:57:13 WebServer: PlexConnect options:
+{'aTVAddress': '192.168.2.2', 'aTVScreenResolution': '720', 'PlexConnectUDID': 'C07GGV5LDDR5', 'aTVLanguage': 'en', 'aTVFirmwareVersion': '6.5', 'PlexConnect': 'Library_View'}
+02:57:13 WebServer: additional arguments:
+
+02:57:13 WebServer: serving .xml: /library/sections
+02:57:13 XMLConverter: ---------------------------------------------
+02:57:13 XMLConverter: PMS, path: owned /library/sections 
+02:57:13 XMLConverter: Initial Command: Library_View
+02:57:13 XMLConverter: Split Directory: Library Command: View
+02:57:13 XMLConverter: XMLTemplate: Library/View.xml
+02:57:13 XMLConverter: ---------------------------------------------
+02:57:13 PlexAPI: URL: http://192.168.2.3:32400/library/sections
+02:57:13 PlexAPI: xargs: {'X-Plex-Platform': 'iOS', 'X-Plex-Model': '3,1', 'X-Plex-Client-Platform': 'iOS', 'X-Plex-Client-Identifier': 'C07GGV5LDDR5', 'X-Plex-Device': 'AppleTV', 'X-Plex-Product': 'PlexConnect', 'X-Plex-Platform-Version': '6.5', 'X-Plex-Version': '0.5-dev-020615'}
+02:57:13 PlexAPI: No Response from Plex Media Server
+02:57:13 PlexAPI: We failed to reach a server. Reason: Unauthorized
+02:57:13 PlexAPI: Traceback:
+Traceback (most recent call last):
+  File "/Applications/PlexConnect/PlexAPI.py", line 378, in getXMLFromPMS
+    response = urllib2.urlopen(request, timeout=20)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 437, in open
+    response = meth(req, response)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 550, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 475, in error
+    return self._call_chain(*args)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 558, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 401: Unauthorized
+
+02:57:13 PlexAPI: ====== Local Server/Sections XML ======
+02:57:13 PlexAPI: <MediaConverter friendlyName="owned Servers" size="1">
+  <Server address="192.168.2.3" baseURL="http://192.168.2.3:32400" local="1" name="MPB" owned="1" port="32400" searchKey="PMS(192.168.2.3:32400)/Search/Entry.xml" size="0" />
+</MediaConverter>
+
+02:57:13 PlexAPI: ====== Local Server/Sections XML finished ======
+02:57:13 XMLConverter: XML_ExpandNode: None - done
+02:57:13 XMLConverter: XML_ExpandLine: Library/{{VAL($libraryview)}}.xml
+02:57:13 XMLConverter: CCmds_getParam: $libraryview, 
+02:57:13 XMLConverter: CCmds_getParam: , 
+02:57:13 ATVSettings: getsetting List
+02:57:13 XMLConverter: CCmds_getKey: List,,False
+02:57:13 XMLConverter: CCmds_getParam: , 
+02:57:13 XMLConverter: CCmds_getConversion: [],
+02:57:13 XMLConverter: CCmds_applyConversion: List
+02:57:13 XMLConverter: XML_ExpandLine: Library/List.xml - done
+02:57:13 XMLConverter: XMLTemplate redirect: Library/List.xml
+02:57:13 XMLConverter: ====== generated aTV-XML ======
+02:57:13 XMLConverter: <atv>
+  <redirect template="Library/List.xml" />
+</atv>
+
+02:57:13 XMLConverter: ====== aTV-XML finished ======
+02:57:13 XMLConverter: XML_ExpandNode: None - done
+02:57:13 XMLConverter: XML_ExpandNode: None - done
+02:57:13 XMLConverter: XML_ExpandNode: 
+    {{VAR(sections:NoKey:FALSE)}}  
+    
+    
+02:57:13 XMLConverter: CCmds_getParam: sections, NoKey:FALSE
+02:57:13 XMLConverter: CCmds_getParam: NoKey, FALSE
+02:57:13 XMLConverter: CCmds_getParam: FALSE, 
+02:57:13 XMLConverter: CCmds_getKey: FALSE,,True
+02:57:13 XMLConverter: CCmds_getParam: , 
+02:57:13 XMLConverter: CCmds_getConversion: [],
+02:57:13 XMLConverter: XML_ExpandNode: {{TEXT(Plex Library)}}
+02:57:13 XMLConverter: XML_ExpandNode - Stumbled over TEXT in line {{TEXT(Plex Library)}}
+02:57:13 XMLConverter: XML_ExpandNode: 
+          {{COPY(Server:@main/size::0=|1=COPY)}}
+            
+            
+02:57:13 XMLConverter: CCmds_getParam: Server, @main/size::0=|1=COPY
+02:57:13 XMLConverter: CCmds_getParam: @main/size, :0=|1=COPY
+02:57:13 XMLConverter: CCmds_getParam: , 0=|1=COPY
+02:57:13 XMLConverter: CCmds_getKey: 1,0=|1=COPY,False
+02:57:13 XMLConverter: CCmds_getParam: 0=|1=COPY, 
+02:57:13 XMLConverter: CCmds_getConversion: [('0', ''), ('1', 'COPY')],
+02:57:13 XMLConverter: CCmds_applyConversion: COPY
+02:57:13 XMLConverter: XML_ExpandNode: {{VAL(name)}}{{VAL(local::0= <{{TEXT(remote)}}>|0 =)}}
+02:57:13 XMLConverter: XML_ExpandNode - Stumbled over VAL in line {{VAL(name)}}{{VAL(local::0= <{{TEXT(remote)}}>|0 =)}}
+02:57:13 XMLConverter: XML_ExpandNode: {{CUT(@main/size:CUT:0=CUT|1=CUT|1 =)}}
+            
+            
+02:57:13 XMLConverter: CCmds_getParam: @main/size, CUT:0=CUT|1=CUT|1 =
+02:57:13 XMLConverter: CCmds_getParam: CUT, 0=CUT|1=CUT|1 =
+02:57:13 XMLConverter: CCmds_getKey: 1,0=CUT|1=CUT|1 =,False
+02:57:13 XMLConverter: CCmds_getParam: 0=CUT|1=CUT|1 =, 
+02:57:13 XMLConverter: CCmds_getConversion: [('0', 'CUT'), ('1', 'CUT'), ('1 ', '')],
+02:57:13 XMLConverter: CCmds_applyConversion: CUT
+02:57:13 XMLConverter: XML_ExpandNode: 
+              {{COPY(Directory)}}
+              {{VAR(sections:NoKey:TRUE)}}  
+                
+02:57:13 XMLConverter: CCmds_getParam: Directory, 
+02:57:13 XMLConverter: XML_ExpandNode: {{TEXT(Search)}}
+02:57:13 XMLConverter: XML_ExpandNode - Stumbled over TEXT in line {{TEXT(Search)}}
+02:57:13 XMLConverter: XML_ExpandNode: None - done
+02:57:13 XMLConverter: XML_ExpandNode: None - done
+02:57:13 XMLConverter: XML_ExpandNode: None - done
+02:57:13 XMLConverter: XML_ExpandLine: atv.loadURL('{{URL(searchKey)}}')
+02:57:13 XMLConverter: CCmds_getParam: searchKey, 
+02:57:13 XMLConverter: CCmds_getParam: , 
+02:57:13 XMLConverter: CCmds_getKey: PMS(192.168.2.3:32400)/Search/Entry.xml,,False
+02:57:13 XMLConverter: CCmds_getParam: , 
+02:57:13 XMLConverter: CCmds_getParam: , 
+02:57:13 XMLConverter: XML_ExpandLine: atv.loadURL('http://trailers.apple.com/PMS(192.168.2.3:32400)/Search/Entry.xml') - done
+02:57:13 XMLConverter: XML_ExpandLine: {{VAL(searchKey)}}
+02:57:13 XMLConverter: CCmds_getParam: searchKey, 
+02:57:13 XMLConverter: CCmds_getParam: , 
+02:57:13 XMLConverter: CCmds_getKey: PMS(192.168.2.3:32400)/Search/Entry.xml,,False
+02:57:13 XMLConverter: CCmds_getParam: , 
+02:57:13 XMLConverter: CCmds_getConversion: [],
+02:57:13 XMLConverter: CCmds_applyConversion: PMS(192.168.2.3:32400)/Search/Entry.xml
+02:57:13 XMLConverter: XML_ExpandLine: PMS(192.168.2.3:32400)/Search/Entry.xml - done
+02:57:13 XMLConverter: XML_ExpandLine: atv.loadURL('{{URL(searchKey)}}')
+02:57:13 XMLConverter: CCmds_getParam: searchKey, 
+02:57:13 XMLConverter: CCmds_getParam: , 
+02:57:13 XMLConverter: CCmds_getKey: PMS(192.168.2.3:32400)/Search/Entry.xml,,False
+02:57:13 XMLConverter: CCmds_getParam: , 
+02:57:13 XMLConverter: CCmds_getParam: , 
+02:57:13 XMLConverter: XML_ExpandLine: atv.loadURL('http://trailers.apple.com/PMS(192.168.2.3:32400)/Search/Entry.xml') - done
+02:57:13 XMLConverter: XML_ExpandLine: {{TEXT(Search)}}
+02:57:13 XMLConverter: XML_ExpandLine: Search - done
+02:57:13 XMLConverter: XML_ExpandNode: None - done
+02:57:13 XMLConverter: XML_ExpandNode: None - done
+02:57:13 XMLConverter: XML_ExpandNode: None - done
+02:57:13 XMLConverter: XML_ExpandNode: {{CUT(#sections::FALSE=CUT|TRUE=)}}  
+    
+    
+    
+02:57:13 XMLConverter: CCmds_getParam: #sections, :FALSE=CUT|TRUE=
+02:57:13 XMLConverter: CCmds_getParam: , FALSE=CUT|TRUE=
+02:57:13 XMLConverter: CCmds_getKey: FALSE,FALSE=CUT|TRUE=,False
+02:57:13 XMLConverter: CCmds_getParam: FALSE=CUT|TRUE=, 
+02:57:13 XMLConverter: CCmds_getConversion: [('FALSE', 'CUT'), ('TRUE', '')],
+02:57:13 XMLConverter: CCmds_applyConversion: CUT
+02:57:13 XMLConverter: XML_ExpandNode: 
+    {{CUT(#sections::FALSE=|TRUE=CUT)}}
+      
+02:57:13 XMLConverter: CCmds_getParam: #sections, :FALSE=|TRUE=CUT
+02:57:13 XMLConverter: CCmds_getParam: , FALSE=|TRUE=CUT
+02:57:13 XMLConverter: CCmds_getKey: FALSE,FALSE=|TRUE=CUT,False
+02:57:13 XMLConverter: CCmds_getParam: FALSE=|TRUE=CUT, 
+02:57:13 XMLConverter: CCmds_getConversion: [('FALSE', ''), ('TRUE', 'CUT')],
+02:57:13 XMLConverter: CCmds_applyConversion: 
+02:57:13 XMLConverter: XML_ExpandNode: {{TEXT(No Plex Library Sections Available)}}
+02:57:13 XMLConverter: XML_ExpandNode - Stumbled over TEXT in line {{TEXT(No Plex Library Sections Available)}}
+02:57:13 XMLConverter: XML_ExpandLine: {{URL(:/js/utils.js)}}
+02:57:13 XMLConverter: CCmds_getParam: , /js/utils.js
+02:57:13 XMLConverter: CCmds_getParam: /js/utils.js, 
+02:57:13 XMLConverter: CCmds_getKey: /js/utils.js,,True
+02:57:13 XMLConverter: CCmds_getParam: , 
+02:57:13 XMLConverter: CCmds_getParam: , 
+02:57:13 XMLConverter: XML_ExpandLine: http://trailers.apple.com/js/utils.js - done
+02:57:13 XMLConverter: XML_ExpandLine: {{URL(:/js/sectionHoldSelect.js)}}
+02:57:13 XMLConverter: CCmds_getParam: , /js/sectionHoldSelect.js
+02:57:13 XMLConverter: CCmds_getParam: /js/sectionHoldSelect.js, 
+02:57:13 XMLConverter: CCmds_getKey: /js/sectionHoldSelect.js,,True
+02:57:13 XMLConverter: CCmds_getParam: , 
+02:57:13 XMLConverter: CCmds_getParam: , 
+02:57:13 XMLConverter: XML_ExpandLine: http://trailers.apple.com/js/sectionHoldSelect.js - done
+02:57:13 XMLConverter: XML_ExpandLine: {{TEXT(No Plex Library Sections Available)}}
+02:57:13 XMLConverter: XML_ExpandLine: No Plex Library Sections Available - done
+02:57:13 XMLConverter: ====== generated aTV-XML ======
+02:57:13 XMLConverter: <atv>
+  <head>
+    <script src="http://trailers.apple.com/js/utils.js" />
+    <script src="http://trailers.apple.com/js/sectionHoldSelect.js" />
+  </head>
+  <body>
+    <dialog id="com.sample.error-dialog">
+      <title>PlexConnect</title>
+      <description>No Plex Library Sections Available</description>
+    </dialog>
+  </body>
+</atv>
+
+02:57:13 XMLConverter: ====== aTV-XML finished ======
+02:57:13 Settings: getsetting allow_gzip_atv=False
+02:57:13 WebServer: http request header:
+Host: trailers.apple.com
+X-Apple-Store-Front: 143441-1,19
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en;q=0.9
+Cookie: s_vi=[CS]v1|2AD9138805013717-6000160320269B03[CE]; xp_ci=3z2mscHhzED6z50sz9rwzePh1F7KR
+Connection: keep-alive
+X-Apple-TV-Resolution: 720
+X-Apple-TV-Version: 6.5
+User-Agent: iTunes-AppleTV/6.5 (2; 8GB; dt:11)
+
+02:57:13 WebServer: http request path:
+/&PlexConnectATVLogLevel=1&PlexConnectLog=atv.onGenerateRequest%20done%3A%20http%3A%2F%2Ftrailers.apple.com%2Fjs%2Futils.js%3FPlexConnectUDID%3DC07GGV5LDDR5%26PlexConnectATVName%3DGreat%2520Room%2520Apple%2520TV
+02:57:13 Localize: aTVLanguage: en
+02:57:13 WebServer: pms address:
+
+02:57:13 WebServer: cleaned path:
+/
+02:57:13 WebServer: PlexConnect options:
+{'aTVAddress': '192.168.2.2', 'aTVScreenResolution': '720', 'PlexConnectATVLogLevel': '1', 'PlexConnectLog': 'atv.onGenerateRequest done: http://trailers.apple.com/js/utils.js?PlexConnectUDID=C07GGV5LDDR5&PlexConnectATVName=Great%20Room%20Apple%20TV', 'aTVFirmwareVersion': '6.5', 'aTVLanguage': 'en'}
+02:57:13 WebServer: additional arguments:
+
+02:57:13 ATVLogger: atv.onGenerateRequest done: http://trailers.apple.com/js/utils.js?PlexConnectUDID=C07GGV5LDDR5&PlexConnectATVName=Great%20Room%20Apple%20TV
+02:57:13 WebServer: http request header:
+Host: trailers.apple.com
+Accept-Encoding: gzip, deflate
+Accept: */*
+Accept-Language: en;q=0.9
+Cookie: s_vi=[CS]v1|2AD9138805013717-6000160320269B03[CE]; xp_ci=3z2mscHhzED6z50sz9rwzePh1F7KR
+Connection: keep-alive
+X-Apple-TV-Resolution: 720
+X-Apple-TV-Version: 6.5
+User-Agent: iTunes-AppleTV/6.5 (2; 8GB; dt:11)
+
+02:57:13 WebServer: http request path:
+/js/utils.js?PlexConnectUDID=C07GGV5LDDR5&PlexConnectATVName=Great%20Room%20Apple%20TV
+02:57:13 Localize: aTVLanguage: en
+02:57:13 WebServer: pms address:
+
+02:57:13 WebServer: cleaned path:
+/js/utils.js
+02:57:13 WebServer: PlexConnect options:
+{'aTVAddress': '192.168.2.2', 'aTVScreenResolution': '720', 'PlexConnectUDID': 'C07GGV5LDDR5', 'aTVLanguage': 'en', 'aTVFirmwareVersion': '6.5', 'PlexConnectATVName': 'Great Room Apple TV'}
+02:57:13 WebServer: additional arguments:
+
+02:57:13 WebServer: serving /js/utils.js
+02:57:13 Settings: getsetting allow_gzip_atv=False
+02:57:13 WebServer: http request header:
+Host: trailers.apple.com
+X-Apple-Store-Front: 143441-1,19
+Accept: */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en;q=0.9
+Cookie: s_vi=[CS]v1|2AD9138805013717-6000160320269B03[CE]; xp_ci=3z2mscHhzED6z50sz9rwzePh1F7KR
+Connection: keep-alive
+X-Apple-TV-Resolution: 720
+X-Apple-TV-Version: 6.5
+User-Agent: iTunes-AppleTV/6.5 (2; 8GB; dt:11)
+
+02:57:13 WebServer: http request path:
+/&PlexConnectATVLogLevel=1&PlexConnectLog=atv.onGenerateRequest%20done%3A%20http%3A%2F%2Ftrailers.apple.com%2Fjs%2FsectionHoldSelect.js%3FPlexConnectUDID%3DC07GGV5LDDR5%26PlexConnectATVName%3DGreat%2520Room%2520Apple%2520TV
+02:57:13 Localize: aTVLanguage: en
+02:57:13 WebServer: pms address:
+
+02:57:13 WebServer: cleaned path:
+/
+02:57:13 WebServer: PlexConnect options:
+{'aTVAddress': '192.168.2.2', 'aTVScreenResolution': '720', 'PlexConnectATVLogLevel': '1', 'PlexConnectLog': 'atv.onGenerateRequest done: http://trailers.apple.com/js/sectionHoldSelect.js?PlexConnectUDID=C07GGV5LDDR5&PlexConnectATVName=Great%20Room%20Apple%20TV', 'aTVFirmwareVersion': '6.5', 'aTVLanguage': 'en'}
+02:57:13 WebServer: additional arguments:
+
+02:57:13 ATVLogger: atv.onGenerateRequest done: http://trailers.apple.com/js/sectionHoldSelect.js?PlexConnectUDID=C07GGV5LDDR5&PlexConnectATVName=Great%20Room%20Apple%20TV
+02:57:13 WebServer: http request header:
+Host: trailers.apple.com
+Accept-Encoding: gzip, deflate
+Accept: */*
+Accept-Language: en;q=0.9
+Cookie: s_vi=[CS]v1|2AD9138805013717-6000160320269B03[CE]; xp_ci=3z2mscHhzED6z50sz9rwzePh1F7KR
+Connection: keep-alive
+X-Apple-TV-Resolution: 720
+X-Apple-TV-Version: 6.5
+User-Agent: iTunes-AppleTV/6.5 (2; 8GB; dt:11)
+
+02:57:13 WebServer: http request path:
+/js/sectionHoldSelect.js?PlexConnectUDID=C07GGV5LDDR5&PlexConnectATVName=Great%20Room%20Apple%20TV
+02:57:13 Localize: aTVLanguage: en
+02:57:13 WebServer: pms address:
+
+02:57:13 WebServer: cleaned path:
+/js/sectionHoldSelect.js
+02:57:13 WebServer: PlexConnect options:
+{'aTVAddress': '192.168.2.2', 'aTVScreenResolution': '720', 'PlexConnectUDID': 'C07GGV5LDDR5', 'aTVLanguage': 'en', 'aTVFirmwareVersion': '6.5', 'PlexConnectATVName': 'Great Room Apple TV'}
+02:57:13 WebServer: additional arguments:
+
+02:57:13 WebServer: serving /js/sectionHoldSelect.js
+02:57:13 Settings: getsetting allow_gzip_atv=False
